@@ -6,19 +6,17 @@
 </head>
 <body>
     <h1>Book List</h1>
-
-    <table>
-        <tr>
-            <th>Id</th>
-            <th>Title</th>
-            <th>Publisher</th>
-        </tr>
-        <tr th:each="book : ${books}">
-            <td th:text="${book.id}">1</td>
-            <td th:text="${book.title}">2</td>
-            <td th:text="${book.publisher.name}">3</td>
-        </tr>
-    </table>
-
+        <table>
+            <tr>
+                <th>Id</th>
+                <th>Title</th>
+                <th>Publisher</th>
+            </tr>
+            <tr th:each="book : ${books}">
+            <td th:text="${book.id}">Id</td>
+            <td th:text="${book.title}">Title</td>
+            <td th:text="${book.publisher.name}">Publisher</td>
+            </tr>
+        </table>
 </body>
 </html>

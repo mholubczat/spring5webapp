@@ -17,7 +17,7 @@ public class Publisher {
     private Set<Book> books = new HashSet<>();
 
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    @GeneratedValue(strategy = GenerationType.SEQUENCE)
     private Long id;
 
     public Publisher() {
